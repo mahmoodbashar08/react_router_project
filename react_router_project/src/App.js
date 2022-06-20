@@ -1,4 +1,4 @@
-import Hrader from "./components/Header";
+import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -10,7 +10,19 @@ import { Route, Switch, useHistory } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Header />
+      <Nav />
+      <Footer />
+      <Home />
+      <NewPost />
+      <PostPage />
+      <About />
+      <Missing />
+      <h1>hi</h1>
+    </div>
+  );
 }
 
 export default App;
